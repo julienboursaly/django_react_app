@@ -15,12 +15,29 @@ python -m install django
 django-admin startproject backend
 
 cd backend
-python manage.py startapp todo
+python manage.py startapp dummy_backend
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
+
+################################################################################
+# DJANGO INSTALL
+################################################################################
+
+cd backend/ && pip install -r requirement.txt
 
 ################################################################################
 # REACT INSTALL
 ################################################################################
 
 npx create-react-app frontend
+
+################################################################################
+# REACT START
+################################################################################
+
+# install dependencies
+cd frontend/ && npm install
+
+# start
+cd frontend/ && npm start
