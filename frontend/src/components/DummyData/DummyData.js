@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DummyData = (props) => {
+const dummyData = (props) => {
 	return (
 		<div>
 			<p>{ props.name }</p>
@@ -9,4 +9,4 @@ const DummyData = (props) => {
 	);
 }
 
-export default DummyData
+export default dummyData

@@ -8,9 +8,7 @@ const initialState = {
 	data : [],
 }
 
-const FullData = () => {
-	
-
+const fullData = () => {
 	const [state, setState] = useState(initialState);
 
 	useEffect(() => {
@@ -52,4 +50,4 @@ const FullData = () => {
 //	}
 //}
 
-export default FullData
+export default fullData
