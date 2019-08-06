@@ -9,4 +9,4 @@ class Dummy(models.Model):
     data = models.CharField(max_length=120)
 
     def _str_(self):
-        return self.data
+        return self.name
