@@ -18,9 +18,9 @@ from django.contrib import admin
 from rest_framework import routers
 from dummy_backend import views
 
-router = routers.DefaultRouter
+router = routers.DefaultRouter()
 
-router.register('dummy/', views.DummyView, 'dummy') 
+router.register(r'dummy', views.DummyView, 'dummy') 
 
 
 
