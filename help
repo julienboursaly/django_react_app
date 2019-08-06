@@ -41,3 +41,15 @@ cd frontend/ && npm install
 
 # start
 cd frontend/ && npm start
+
+################################################################################
+# REACT PACKAGE
+################################################################################
+
+clsx : utile pour noramlizer les class css avec les modules css activé
+query-string : parser les params de l'entete http si variable utilisé à l'interieur
+react-router-dom : permet de faire du multi page sur react
+lodash : utilitaire js pour les objects / les tableaux. Indispensable pour ne plus codé en C
+redux : créé des stores
+react-redux : donne acces au store à tout les components
+redux-thunk : permet a redux de faire des fonction async et donc de faire des requete à l'api
