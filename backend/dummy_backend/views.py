@@ -6,6 +6,7 @@ from rest_framework import viewsets
 from .serializers import DummySerializer
 from .models import Dummy
 
+
 class DummyView(viewsets.ModelViewSet):
-	serializer_class = DummySerializer
-	queryset = Dummy.objects.all()
+    serializer_class = DummySerializer
+    queryset = Dummy.objects.all()
