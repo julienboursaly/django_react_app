@@ -2,11 +2,11 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework.viewsets import ModelViewSet
 from .serializers import DummySerializer
 from .models import Dummy
 
 
-class DummyView(viewsets.ModelViewSet):
+class DummyView(ModelViewSet):
     serializer_class = DummySerializer
     queryset = Dummy.objects.all()
