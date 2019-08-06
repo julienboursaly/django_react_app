@@ -2,6 +2,10 @@
 
 # trash
 **/.DS_Store
+.idea
 
 # environement virtuel
 /venv/
+
+# modules
+**/node_modules
