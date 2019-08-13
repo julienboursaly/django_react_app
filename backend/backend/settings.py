@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'guardian',
+    
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
+
     'dummy_backend',
     'authentication',
 ]
@@ -105,6 +109,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend', # default
+    'guardian.backends.ObjectPermissionBackend',
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
