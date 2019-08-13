@@ -25,8 +25,6 @@ class Custom(permissions.BasePermission):
 		object_perm = METHOD_TO_OBJECT_PERM.get(request.method)
 		perm = make_perm(app, model, object_perm)
 
-		print(request.user.has_perm(perm, obj))
-
-		if (request.user.has_perm(perm, obj)):
+		if (request.user.has_perm(perm) or request.user.has_perm(perm, obj)):
 			return True
 		return False
